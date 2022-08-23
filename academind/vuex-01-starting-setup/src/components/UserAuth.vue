@@ -1,8 +1,8 @@
 <template>
-  <button @click="login">Login</button>
-  <button @click="logout">Logout</button>
+  <button v-show="!isLoggedIn" @click="login">Login</button>
+  <button v-show="isLoggedIn" @click="logout">Logout</button>
 
-  <h3>{{ isLoggedIn }}</h3>
+  <h3>Logged in?: {{ isLoggedIn }}</h3>
   <h3>{{ finalCounter }}</h3>
 
   <div v-show="isLoggedIn">isLoggedIn</div>
@@ -19,7 +19,7 @@ export default {
     ...mapActions(['login', 'logout']),
   },
   computed: {
-    ...mapGetters(['isLoggedIn', 'finalCounter']),
+    ...mapGetters(['isLoggedIn', 'numbers/finalCounter']),
   },
 };
 </script>

@@ -33,7 +33,7 @@ export default {
       // this.$store.state.counter++;
       // this.$store.commit('increment');
       this.$store.dispatch({
-        type: 'increment',
+        type: 'numbers/increment',
         value: 1,
         haha: 1,
       });
