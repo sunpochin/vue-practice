@@ -25,17 +25,6 @@ export default {
     return {
       members: [],
       teamName: 'Test',
-      // members: [
-      //   { id: 'u1', fullName: 'Max Schwarz', role: 'Engineer' },
-      //   { id: 'u2', fullName: 'Praveen Kumar', role: 'Engineer' },
-      //   { id: 'u3', fullName: 'Julie Jones', role: 'Engineer' },
-      //   { id: 'u4', fullName: 'Alex Blackfield', role: 'Consultant' },
-      //   { id: 'u5', fullName: 'Marie Smith', role: 'Consultant' },
-      // ],
-      // members: [
-      //   { id: 'u1', fullName: 'Max Schwarz', role: 'Engineer' },
-      //   { id: 'u2', fullName: 'Max Schwarz', role: 'Engineer' },
-      // ],
     };
   },
   methods: {
@@ -48,7 +37,7 @@ export default {
       );
       const teamId = newRoute.params.teamId;
       const selectedTeam = this.teams.find((team) => teamId === team.id);
-      console.log('selectedTeam:', selectedTeam);
+      console.log('teamId: ', teamId, ', selectedTeam:', selectedTeam);
 
       const members = selectedTeam.members;
       const selectedMembers = [];
