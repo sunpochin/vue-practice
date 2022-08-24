@@ -9,6 +9,7 @@
         :role="member.role"
       ></user-item>
     </ul>
+    <router-link to="/teams/t2">Go to team 2</router-link>
   </section>
 </template>
 
@@ -37,30 +38,37 @@ export default {
       // ],
     };
   },
-  created() {
-    console.log('this.$route.path: ', this.$route.path);
-    console.log(
-      'this.$route.params: ',
-      this.$route.params,
-      this.$route.params.teamId
-    );
-    this.$route.path;
-    const teamId = this.$route.params.teamId;
-    const selectedTeam = this.teams.find((team) => {
-      return teamId === team.id;
-    });
-    console.log('selectedTeam:', selectedTeam);
+  methods: {
+    loadTeamMembers(newRoute) {
+      console.log('this.$route.path: ', newRoute.path);
+      console.log(
+        'this.$route.params: ',
+        newRoute.params,
+        newRoute.params.teamId
+      );
+      const teamId = newRoute.params.teamId;
+      const selectedTeam = this.teams.find((team) => teamId === team.id);
+      console.log('selectedTeam:', selectedTeam);
 
-    const members = selectedTeam.members;
-    const selectedMembers = [];
-    for (const member of members) {
-      // console.log('member: ', member);
-      const selectedUser = this.users.find((user) => user.id === member);
-      console.log('selectedUser: ', selectedUser);
-      selectedMembers.push(selectedUser);
-    }
-    this.members = selectedMembers;
-    this.teamName = selectedTeam.name;
+      const members = selectedTeam.members;
+      const selectedMembers = [];
+      for (const member of members) {
+        // console.log('member: ', member);
+        const selectedUser = this.users.find((user) => user.id === member);
+        console.log('selectedUser: ', selectedUser);
+        selectedMembers.push(selectedUser);
+      }
+      this.members = selectedMembers;
+      this.teamName = selectedTeam.name;
+    },
+  },
+  created() {
+    this.loadTeamMembers(this.$route);
+  },
+  watch: {
+    $route(newRoute) {
+      this.loadTeamMembers(newRoute);
+    },
   },
 };
 </script>
