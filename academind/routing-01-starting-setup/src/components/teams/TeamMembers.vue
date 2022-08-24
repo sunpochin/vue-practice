@@ -27,15 +27,16 @@ export default {
       teamName: 'Test',
     };
   },
+  props: ['teamId'],
   methods: {
-    loadTeamMembers(newRoute) {
-      console.log('this.$route.path: ', newRoute.path);
-      console.log(
-        'this.$route.params: ',
-        newRoute.params,
-        newRoute.params.teamId
-      );
-      const teamId = newRoute.params.teamId;
+    loadTeamMembers(teamId) {
+      console.log('this.$route.path: ', this.$route.path);
+      // console.log(
+      //   'this.$route.params: ',
+      //   newRoute.params,
+      //   newRoute.params.teamId
+      // );
+      // const teamId = newRoute.params.teamId;
       const selectedTeam = this.teams.find((team) => teamId === team.id);
       console.log('teamId: ', teamId, ', selectedTeam:', selectedTeam);
 
@@ -52,12 +53,16 @@ export default {
     },
   },
   created() {
-    this.loadTeamMembers(this.$route);
+    // this.loadTeamMembers(this.$route);
+    this.loadTeamMembers(this.teamId);
   },
   watch: {
-    $route(newRoute) {
-      this.loadTeamMembers(newRoute);
+    teamId(newId) {
+      this.loadTeamMembers(newId);
     },
+    // $route(newRoute) {
+    //   this.loadTeamMembers(newRoute);
+    // },
   },
 };
 </script>
