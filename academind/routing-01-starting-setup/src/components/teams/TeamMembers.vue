@@ -28,6 +28,9 @@ export default {
     };
   },
   props: ['teamId'],
+  mounted() {
+    console.log('route: ', this.$route);
+  },
   methods: {
     loadTeamMembers(teamId) {
       console.log('this.$route.path: ', this.$route.path);
@@ -39,6 +42,11 @@ export default {
       // const teamId = newRoute.params.teamId;
       const selectedTeam = this.teams.find((team) => teamId === team.id);
       console.log('teamId: ', teamId, ', selectedTeam:', selectedTeam);
+      // https://www.udemy.com/course/vuejs-2-the-complete-guide/learn/lecture/21879358#questions/12798023
+      if (!selectedTeam) {
+        this.$router.push('/teams');
+        return;
+      }
 
       const members = selectedTeam.members;
       const selectedMembers = [];
@@ -60,9 +68,9 @@ export default {
     teamId(newId) {
       this.loadTeamMembers(newId);
     },
-    // $route(newRoute) {
-    //   this.loadTeamMembers(newRoute);
-    // },
+    $route(newRoute) {
+      this.loadTeamMembers(newRoute);
+    },
   },
 };
 </script>

@@ -1,4 +1,5 @@
 <template>
+  <router-view></router-view>
   <ul>
     <teams-item
       v-for="team in teams"
@@ -19,7 +20,7 @@ export default {
   },
   inject: ['teams'],
   mounted() {
-    console.log('TeamsList');
+    console.log('route: ', this.$route);
   },
 };
 </script>
