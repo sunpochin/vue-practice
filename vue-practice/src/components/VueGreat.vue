@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+
     <p>
       messages: {{ messages }}
     </p>
@@ -16,7 +17,6 @@
 
 <script>
 export default {
-
   data: () => {
     return {
       msg: '',
@@ -34,9 +34,9 @@ export default {
       this.scrollHeight = el.scrollHeight;
       el.scrollTop = el.scrollHeight;
 
-      // this.$nextTick(() => {
-      //   this.realScrollHeight = el.scrollHeight;
-      // });
+      this.$nextTick(() => {
+        this.realScrollHeight = el.scrollHeight;
+      });
     }
   },
   mounted() {

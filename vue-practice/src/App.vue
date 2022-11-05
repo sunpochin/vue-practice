@@ -1,18 +1,19 @@
 <template>
   <div id="app">
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
-    <LifeCycle msg="Welcome to Your Vue.js App"/>
+    <!-- <LifeCycle msg="Welcome to Your Vue.js App" /> -->
+    <router-view :key="$route.path"></router-view>
   </div>
 </template>
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
-import LifeCycle from './components/LifeCycle.vue'
+// import LifeCycle from './components/LifeCycle.vue'
 
 export default {
   name: 'App',
   components: {
-    LifeCycle
+    // LifeCycle
   }
 }
 </script>
