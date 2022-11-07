@@ -5,12 +5,19 @@ import VueGreat from '../components/VueGreat.vue';
 import LifeCycleHooks from '../components/LifeCycleHooks.vue';
 import HelloVuejs from '../components/HelloVuejs.vue';
 import HelloWorld from '../components/HelloWorld.vue';
+import VIfVShow from '../components/VIfVShow.vue';
+import index from '../components/Index.vue';
 
 Vue.use(VueRouter);
 const routes = [
 	{
 		path: '/',
-		component: LifeCycleHooks,
+		component: index,
+		props: true,
+	},
+	{
+		path: '/vifvshow',
+		component: VIfVShow,
 		props: true,
 	},
 	{
