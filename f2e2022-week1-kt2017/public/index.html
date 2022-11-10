@@ -5,8 +5,15 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
 		<link rel="icon" href="<%= BASE_URL %>favicon.ico" />
-		<title><%= htmlWebpackPlugin.options.title %></title>
-	</head>
+		<!-- <title><%= htmlWebpackPlugin.options.title %></title> -->
+
+    <link rel="stylesheet" href="home.css" />
+    <!-- <link rel="stylesheet" href="about.css" /> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <title>week1</title>
+
+  </head>
 	<body>
 		<noscript>
 			<strong
@@ -39,11 +46,11 @@
 				<div class="line mousemove"></div>
 				<div class="text mousemove">向下滑動</div>
 			</div>
-			<div class="cover-left"><img src="./image/paper-left.png" alt="" /></div>
+			<div class="cover-left"><img src="./image/jd-left.png" alt="" /></div>
 			<div class="cover-right">
-				<img src="./image/paper-right.png" alt="" />
+				<img src="./image/jd-right.png" alt="" />
 			</div>
-			<div class="cover-top"><img src="./image/paper-top.png" alt="" /></div>
+			<div class="cover-top"><img src="./image/jd-up.png" alt="" /></div>
 		</div>
 
 		<section class="home">
@@ -86,7 +93,18 @@
 				</div>
 			</div>
 		</section>
-
-    
+    <div id="app"></div>
 	</body>
+
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.7.8/dist/vue.js"></script>
+	<script
+		src="https://kit.fontawesome.com/6c92ff04b8.js"
+		crossorigin="anonymous"
+	></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.9.6/lottie.min.js"></script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/ScrollTrigger.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/TextPlugin.min.js"></script>
+	<script src="main.js"></script>
 </html>

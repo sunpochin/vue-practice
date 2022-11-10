@@ -1,0 +1,678 @@
+.about {
+  background: url("./image/bg2.png") no-repeat;
+  background-size: 100% 100%;
+}
+
+.beans {
+  width: 62.25px;
+  height: 55.14px;
+  position: absolute;
+  z-index: 100;
+}
+
+.beans.one {
+  bottom: 4%;
+  left: 2%;
+}
+
+.level {
+  padding: 8.6rem 4rem 13.3rem;
+  position: relative;
+}
+
+.level > .title {
+  max-width: 590px;
+  height: 146.83px;
+  margin: 0 auto;
+}
+
+.level > .describe {
+  margin: 4.217rem auto 4rem;
+
+  font-family: "Noto Sans TC";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 4.3rem;
+  line-height: 6.2rem;
+  text-align: center;
+  letter-spacing: 0.6em;
+}
+
+.level .double-line {
+  width: 100%;
+  height: 17px;
+  border-top: 0.4rem solid var(--borwn-color);
+  border-bottom: 0.4rem solid var(--borwn-color);
+
+  margin-bottom: 9.9rem;
+}
+
+/*****************level info style****************/
+
+.level .info {
+  position: relative;
+}
+
+.level .info .item {
+  background: url("./image/bg-info.png");
+  background-size: 100% 100%;
+  max-width: 1200px;
+  height: 528px;
+  padding: 1.6rem 4rem;
+  margin: 4.2rem auto;
+}
+
+.level .info .title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.level .info .title .text {
+  font-family: "Noto Sans TC";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4.4rem;
+  line-height: 6.4rem;
+  color: var(--white-color);
+}
+
+.level .info .title .icon {
+  max-width: 327px;
+  height: 69px;
+}
+
+.level .info .describe {
+  display: flex;
+  gap: 86.65px;
+  padding: 6.6rem 10.6rem;
+}
+
+.level .info .describe .pic {
+  max-width: 313.38px;
+  height: 290px;
+
+  position: relative;
+  flex: 1;
+}
+
+.level .info .describe .text {
+  flex: 2;
+}
+
+.level .info .describe .pic .scroll-down {
+  max-width: 63.07px;
+  height: 98.62px;
+  position: absolute;
+  left: 80px;
+  top: 170px;
+}
+
+.level .info .describe .pic .pic-pdf {
+  position: absolute;
+  max-width: 240px;
+  height: 300px;
+  top: -10px;
+  left: 10px;
+}
+
+.level .info .describe .pic .pic-recycle {
+  position: absolute;
+  max-width: 297px;
+  height: 245px;
+  top: 25px;
+  left: 0px;
+}
+
+.level .info .describe .text h1 {
+  font-family: "Noto Serif TC";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 4.4rem;
+  line-height: 6.3rem;
+  color: var(--borwn-color);
+}
+
+.level .info .describe .text p {
+  font-family: "Noto Serif TC";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.4rem;
+  line-height: 3.5rem;
+  padding: 1.4rem 0 8rem;
+}
+
+.level .info .describe .btn button {
+  font-family: "Noto Sans TC";
+  font-style: normal;
+  font-weight: 350;
+  font-size: 2.8rem;
+  line-height: 4.1rem;
+  background: none;
+  outline: none;
+  border: none;
+  width: 183px;
+  height: 70px;
+  text-align: center;
+  padding: 1.45rem 0rem;
+  border-radius: 4rem;
+  box-shadow: (0px 0.4rem 0.4rem rgba(0, 0, 0, 0.25));
+}
+
+.level .info .describe .btn button:nth-child(1) {
+  border: 3px solid var(--borwn-color);
+  color: var(--borwn-color);
+  margin-right: 2rem;
+}
+
+.level .info .describe .btn button:nth-child(2) {
+  background-color: var(--red-color);
+  color: var(--white-color);
+}
+
+/*****************level info style end****************/
+
+/*****************time style start****************/
+
+.time {
+  position: relative;
+  padding-bottom: 6.4rem;
+}
+
+.beans.two {
+  bottom: 45%;
+  right: 25%;
+}
+
+.beans.three {
+  bottom: 3%;
+  right: 10%;
+}
+
+.time .container {
+  padding: 0 3.7rem;
+}
+
+.time .title,
+.awards .title,
+#live .title {
+  width: 100vw;
+  height: 170px;
+  background-color: var(--borwn-color);
+}
+
+.time .title h1,
+.awards .title h1,
+#live .title h1 {
+  font-family: "Noto Serif TC";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 6rem;
+  line-height: 17rem;
+  color: var(--white-color);
+  text-align: center;
+}
+
+.time .container {
+  overflow-y: hidden;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.time .process {
+  width: 1205px;
+  margin: 0 auto;
+}
+
+.time .line-up {
+  width: 1205px;
+}
+
+.time .describe {
+  padding: 0 4.1rem;
+}
+
+@media only screen and (max-width: 769px) {
+  .time .describe p {
+    margin: 10px;
+  }
+
+  .time .process {
+    width: 2000px;
+    display: flex;
+    gap: 5rem;
+  }
+}
+
+.time .line-bottom {
+  width: 420px;
+}
+
+.time .line-up,
+.time .line-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 9rem 0;
+  position: relative;
+}
+
+.time .line-bottom {
+  justify-content: center;
+  gap: 5rem;
+  width: 560px;
+  height: 241.52px;
+  margin: 9rem auto;
+}
+
+.time .line-up .item,
+.time .line-bottom .item {
+  width: 261px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: var(--borwn-color);
+}
+
+.time .line-up .item .diamond,
+.time .line-bottom .item .diamond {
+  width: 48.53px;
+  height: 48.53px;
+  transform: rotate(-45deg);
+  background-color: var(--borwn-color);
+  margin: 3rem 0 4rem;
+  z-index: 2;
+}
+
+.time .line-up .item .diamond.color-red {
+  background-color: var(--red-color);
+}
+
+.time .line-up::after {
+  content: "";
+  width: 80%;
+  height: 5px;
+  background-color: var(--borwn-color);
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  z-index: 1;
+}
+
+.time .line-bottom::after {
+  content: "";
+  width: 50%;
+  height: 5px;
+  background-color: var(--borwn-color);
+  position: absolute;
+  top: 40%;
+  left: 25%;
+  z-index: 1;
+}
+
+.time .line-up .item p:nth-child(1),
+.time .line-bottom .item p:nth-child(1) {
+  font-family: "Noto Sans TC";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3rem;
+  line-height: 4.3rem;
+}
+
+.time .line-up .item p:nth-child(3),
+.time .line-bottom .item p:nth-child(3) {
+  font-family: "Noto Sans TC";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 4rem;
+}
+
+.time .describe p {
+  font-family: "Noto Sans TC";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.8rem;
+  line-height: 4.1rem;
+  color: var(--borwn-color);
+}
+/*****************time style end****************/
+
+/*****************Awards style start****************/
+
+.awards {
+  padding-bottom: 1.2rem;
+}
+
+.awards .awards-items {
+  padding: 9.2rem 0rem;
+  display: flex;
+  gap: 2rem;
+  margin: 0 auto;
+  /* height: 374.07px; */
+  max-width: 1198px;
+}
+
+.awards .awards-items .item {
+  /* width: 30.15vw; */
+  max-width: 386px;
+}
+
+.awards-items .item .pic {
+  /* width: 30.15vw; */
+  /* height: 29.21vw; */
+
+  max-width: 386px;
+  height: 374.07px;
+  position: relative;
+}
+
+.awards-items .item .money {
+  width: 232.41px;
+  height: 61.67px;
+  font-family: "Noto Sans TC";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 61.67px;
+  color: var(--white-color);
+  background-color: var(--red-color);
+  text-align: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 9px;
+
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  transform: translateX(-50%);
+}
+
+.awards-items .item .describe {
+  font-family: "Noto Sans TC";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.6rem;
+  line-height: 3.8rem;
+  text-align: center;
+}
+
+.awards .text-end {
+  font-family: "Noto Sans TC";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 3.6rem;
+  line-height: 5.2rem;
+  text-align: center;
+}
+
+/*****************Awards style end****************/
+
+/************live-open sytle start******************/
+
+.live-open {
+  min-height: 100vh;
+  position: relative;
+}
+
+.beans.four {
+  top: 10%;
+  left: 10%;
+}
+
+.live-open p {
+  width: 504px;
+  font-family: "Noto Serif TC";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 7.2rem;
+  line-height: 10.3rem;
+  text-align: center;
+  color: var(--borwn-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.live-open span {
+  color: var(--red-color);
+}
+
+.live-open .animation-container {
+  position: absolute;
+  top: 50%;
+  right: 30%;
+}
+/************live-open sytle end******************/
+
+/************live sytle start******************/
+
+#live .person {
+  padding: 3.1rem 10.8rem 6.3rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 0 auto;
+  justify-content: center;
+  max-width: 1280px;
+}
+
+#live .person .item {
+  padding: 20.6px 6rem 27.26px;
+  height: 57.65vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3.2rem;
+  text-align: center;
+  max-width: 522px;
+  height: 738.5px;
+  /* flex-basis: 48%; */
+}
+
+#live .person .item .time {
+  padding-bottom: 0;
+}
+
+#live .person .item:nth-child(1) {
+  padding-top: 47.68px;
+  background-image: url("./image/people-1.png");
+  background-size: 100% 100%;
+}
+
+#live .person .item:nth-child(2) {
+  background-image: url("./image/people-4.png");
+  background-size: 100% 100%;
+}
+
+#live .person .item:nth-child(3) {
+  background-image: url("./image/people-3.png");
+  background-size: 100% 100%;
+}
+
+#live .person .item:nth-child(4) {
+  background-image: url("./image/people-2.png");
+  background-size: 100% 100%;
+}
+
+#live .person .item .describe {
+  font-family: "Noto Serif TC";
+  font-style: normal;
+  color: var(--borwn-color);
+  line-height: 6.2rem;
+  font-weight: 900;
+}
+
+#live .person .item:nth-child(1) .describe {
+  font-size: 5.7rem;
+}
+
+#live .person .item:nth-child(2) .describe {
+  font-size: 4.9rem;
+}
+
+#live .person .item:nth-child(3) .describe {
+  font-size: 4.6rem;
+}
+
+#live .person .item:nth-child(4) .describe {
+  font-size: 4.4rem;
+}
+
+#live .item .time {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 3.5rem;
+  line-height: 6.7rem;
+  color: var(--borwn-color);
+}
+
+#live .item .name {
+  background-image: url("./image/person-name-bg.png");
+  background-size: 100% 100%;
+  padding: 0.7rem 2rem 0.7rem 2rem;
+  width: 259px;
+  height: 66px;
+  position: absolute;
+  left: 50%;
+  bottom: 12.12%;
+  transform: translateX(-50%);
+}
+
+#live .item .name p {
+  font-family: "Noto Sans TC";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.6rem;
+  /* or 130% */
+  color: var(--white-color);
+  text-align: center;
+}
+/************live sytle end******************/
+
+/************footer sytle start******************/
+
+footer {
+  position: relative;
+}
+
+.beans.five {
+  top: 10%;
+  right: 10%;
+}
+
+footer .container {
+  background-color: var(--borwn-color);
+  padding: 5.4rem 6.6rem;
+  text-align: center;
+}
+
+footer .sponsor > h1 {
+  font-family: "Noto Serif TC";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 8.6rem;
+  color: var(--white-color);
+  margin-bottom: 5rem;
+}
+
+footer .author {
+  font-family: "Noto Sans TC";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.3rem;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+footer .logo {
+  display: flex;
+  justify-content: space-between;
+}
+
+footer .logo .pic:nth-child(1) {
+  max-width: 344px;
+  height: 69px;
+}
+
+footer .logo .pic:nth-child(2) {
+  max-width: 190px;
+  height: 83px;
+}
+footer .logo .pic:nth-child(3) {
+  max-width: 354px;
+  height: 67px;
+}
+
+/************footer sytle end******************/
+
+.discount {
+  position: fixed;
+  top: calc(50% - (310px / 2));
+  left: calc(50% - (527px / 2));
+  width: 527px;
+  height: 310px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  /* display: none; */
+}
+
+.discount.isClose {
+  display: none;
+}
+
+.discount p:nth-child(2) {
+  font-family: "Noto Sans TC";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.5rem;
+  line-height: 5.5rem;
+  color: var(--borwn-color);
+  /* or 220% */
+}
+
+.discount p:nth-child(3) {
+  font-family: "Noto Sans TC";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 5.5rem;
+  color: var(--red-color);
+}
+
+.discount .close {
+  width: 72px;
+  height: 72px;
+  background-color: var(--borwn-color);
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%, -50%);
+  border-radius: 50%;
+}
+
+.discount .close i {
+  width: 72px;
+  height: 72px;
+  font-size: 4rem;
+  line-height: 72px;
+  position: absolute;
+  text-align: center;
+  color: var(--white-color);
+  cursor: pointer;
+}
+
+.beans.isCheck {
+  display: none;
+}

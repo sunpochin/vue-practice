@@ -1,0 +1,377 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;300;400;500;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@200;300;400;500;600;700;900&display=swap");
+
+@font-face {
+  font-family: "AR JULIAN";
+  src: url(./font/ARJULIAN.ttf);
+}
+
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+:root {
+  --borwn-color: #38241b;
+  --red-color: #951205;
+  --white-color: #ffffff;
+}
+
+html,
+body {
+  font-size: 10px;
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  overflow-x: hidden;
+
+  position: relative;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.test {
+  height: 100vh;
+}
+
+.home {
+  height: 100%;
+  background: url("./image/bg-paper.png") no-repeat center;
+  background-size: 100% 100%;
+  padding: 10.1rem 4rem 2.2rem;
+  position: relative;
+}
+
+.cover-top {
+  position: absolute;
+  z-index: 20;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.cover-right {
+  position: absolute;
+  z-index: 10;
+  width: 95.15vw;
+  height: 140vh;
+  left: 36.09%;
+  top: 39.86%;
+}
+
+.cover-left {
+  position: absolute;
+  z-index: 30;
+  width: 73.59vw;
+  height: 146vh;
+  left: -19.37%;
+  top: 36.25%;
+}
+
+.cover-mouse {
+  width: 3rem;
+  height: 4.4rem;
+  border: 2px solid black;
+  border-radius: 12px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+.cover {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  overflow: hidden;
+  z-index: 200;
+}
+
+.nav {
+  background-color: var(--borwn-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 13.5px 24px;
+  position: fixed;
+  width: 100vw;
+  height: 62px;
+  left: 0;
+  top: 0;
+  z-index: 100;
+}
+
+.nav .logo {
+  background-image: url("./image/logo.png");
+  background-size: 100% 100%;
+  height: 35px;
+  width: 145px;
+}
+
+.nav .nav-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white-color);
+  gap: 2.4rem;
+}
+
+.nav .nav-bar li a {
+  font-family: "Noto Sans TC";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 2.6rem;
+  color: var(--white-color);
+}
+
+.nav .nav-bar .sign-up {
+  font-family: "Noto Sans TC";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 29px;
+  background: var(--red-color);
+  padding: 0.65rem 5.15rem;
+  border-radius: 4rem;
+}
+
+.nav .side-bar {
+  display: none;
+}
+
+@media only screen and (max-width: 598px) {
+  .nav .logo {
+    background: url("./image/menu.png");
+    background-size: 100% 100%;
+    height: 50px;
+    width: 50px;
+  }
+
+  .nav .nav-bar li:nth-child(1),
+  .nav .nav-bar li:nth-child(2) {
+    display: none;
+  }
+
+  .nav .nav-bar .sign-up {
+    padding: 5.63px 25px;
+  }
+
+  .nav .side-bar {
+    display: inherit;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    height: 100vh;
+    background-color: var(--borwn-color);
+    flex-direction: column;
+    width: 30%;
+    text-align: center;
+    padding-top: 62px;
+  }
+
+  .nav .side-bar i {
+    width: 30px;
+    height: 30px;
+    color: var(--white-color);
+    font-size: 30px;
+    position: absolute;
+    right: 0;
+  }
+
+  .nav .side-bar li {
+    margin-top: 30px;
+    color: var(--white-color);
+  }
+}
+
+/* nav content */
+
+.home .content {
+  background: url("./image/bg.png") no-repeat;
+  background-size: 100% 100%;
+  max-width: 1213px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 5.1rem 5.9rem 8.5rem;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.home .content-left .title h1 {
+  font-family: "AR JULIAN";
+  font-style: normal;
+  font-weight: 5;
+  font-size: 8rem;
+  line-height: 9rem;
+  color: var(--borwn-color);
+}
+
+.home .content-left .title .th {
+  font-family: "Noto Sans TC";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 3.2rem;
+  line-height: 4.6rem;
+  color: var(--white-color);
+  background: var(--red-color);
+  height: 4.6rem;
+  padding: 0 2.8rem;
+  text-align: center;
+  border-radius: 1.4rem;
+  box-shadow: 0 0.4rem 0.4rem rgba(0, 0, 0, 0.25);
+  vertical-align: middle;
+  margin-left: 1.6rem;
+}
+
+.home .content-left > p:nth-child(2) {
+  font-family: "Noto Serif TC";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 4.2rem;
+  line-height: 6rem;
+  color: var(--borwn-color);
+  max-width: 343px;
+  margin-top: 3.6rem;
+}
+
+.home .content-left > p:nth-child(3) {
+  font-family: "Noto Sans TC";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 3.5rem;
+  color: var(--borwn-color);
+  max-width: 270px;
+  margin-top: 1.5rem;
+}
+
+.content-right {
+  align-self: center;
+}
+
+.home .content-right p {
+  font-family: "AR JULIAN";
+  font-weight: 5;
+  font-size: 2.8rem;
+  line-height: 3.1rem;
+  color: var(--borwn-color);
+}
+
+.home .content-right .num {
+  font-family: "AR JULIAN";
+  font-weight: 5;
+  font-size: 5rem;
+  line-height: 5.615rem;
+}
+
+.home .content-right .unit {
+  font-family: "AR JULIAN";
+  font-weight: 5;
+  font-size: 2rem;
+  line-height: 2.246rem;
+}
+
+.content .pic-face {
+  position: absolute;
+  bottom: -0.5rem;
+  transform: translate(-45%, 110%);
+  width: 672.27px;
+  height: 562px;
+  left: 50%;
+}
+
+.content .pic-face .text {
+  width: 672.27px;
+  position: absolute;
+  bottom: 2rem;
+  left: 6%;
+  font-family: "AR JULIAN";
+  font-style: normal;
+  font-weight: 5;
+  font-size: 2.8rem;
+  line-height: 3.1rem;
+  color: var(--white-color);
+}
+
+.content .pic-face .text .money {
+  font-family: "AR JULIAN";
+  font-style: normal;
+  font-weight: 5;
+  font-size: 5.6rem;
+  line-height: 6.289rem;
+  color: var(--red-color);
+}
+
+@media only screen and (max-width: 769px) {
+  .home {
+    padding: 90px 16px 32px;
+  }
+
+  .content-left p:nth-child(3) {
+    display: none;
+  }
+
+  .content .pic-face {
+    transform: translate(0%, 110%);
+    left: 32px;
+    right: 32px;
+  }
+}
+
+.content .pic-task {
+  position: absolute;
+  width: 380px;
+  top: -5%;
+  right: -1%;
+  opacity: 0;
+}
+
+.content .mouse {
+  width: 3rem;
+  height: 4.4rem;
+  border: 2px solid black;
+  border-radius: 12px;
+  position: absolute;
+  right: 6%;
+  bottom: 12%;
+  opacity: 0;
+}
+
+.content .mouse .line,
+.cover-mouse .line {
+  height: 14px;
+  border: 1px solid #000000;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.content .mouse .text,
+.cover-mouse .text {
+  position: absolute;
+  bottom: -80%;
+  left: 50%;
+  text-align: center;
+  width: 80px;
+  font-family: "Noto Sans TC";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 2.3rem;
+  transform: translateX(-50%);
+}
