@@ -1,17 +1,92 @@
 <!DOCTYPE html>
 <html lang="">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
-    <title><%= htmlWebpackPlugin.options.title %></title>
-  </head>
-  <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
-    <!-- built files will be auto injected -->
-  </body>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+		<link rel="icon" href="<%= BASE_URL %>favicon.ico" />
+		<title><%= htmlWebpackPlugin.options.title %></title>
+	</head>
+	<body>
+		<noscript>
+			<strong
+				>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work
+				properly without JavaScript enabled. Please enable it to
+				continue.</strong
+			>
+		</noscript>
+		<!-- <div id="app"></div> -->
+		<!-- built files will be auto injected -->
+
+		<nav class="nav">
+			<div class="logo">
+				<!-- <img src="./" alt="logo" /> -->
+			</div>
+			<!-- 598px以下才顯示 -->
+			<ul class="side-bar">
+				<i class="fa-solid fa-xmark side-bar-close"></i>
+				<li><a href="">關卡任務</a></li>
+				<li><a href="">競賽說明</a></li>
+			</ul>
+			<ul class="nav-bar">
+				<li><a href="">關卡任務</a></li>
+				<li><a href="">競賽說明</a></li>
+				<li><a href="" class="sign-up">立即報名</a></li>
+			</ul>
+		</nav>
+		<div class="cover">
+			<div class="cover-mouse">
+				<div class="line mousemove"></div>
+				<div class="text mousemove">向下滑動</div>
+			</div>
+			<div class="cover-left"><img src="./image/paper-left.png" alt="" /></div>
+			<div class="cover-right">
+				<img src="./image/paper-right.png" alt="" />
+			</div>
+			<div class="cover-top"><img src="./image/paper-top.png" alt="" /></div>
+		</div>
+
+		<section class="home">
+			<div class="content">
+				<div class="pic-face">
+					<img src="./image/face.png" />
+					<div class="text">
+						個人獎<span class="money">$3,000</span>　團體獎<span class="money"
+							>$10,000</span
+						>
+					</div>
+				</div>
+				<div class="pic-task">
+					<img src="./image/tast.svg" alt="" />
+				</div>
+				<div class="mouse">
+					<div class="line mousemove"></div>
+					<div class="text mousemove">向下滑動</div>
+				</div>
+				<div class="content-left">
+					<div class="title">
+						<h1>THE F2E<span class="th">4th</span></h1>
+					</div>
+					<p>前端工程師和介面設計師，攜手合作拿獎金</p>
+					<p>
+						羨慕別人的酷酷網頁動畫？ 滿足不了同事的許願？
+						動畫技能樹太雜無從下手？
+					</p>
+				</div>
+				<div class="content-right">
+					<p>
+						報名總人數 <span class="num">1158</span><span class="unit">人</span>
+					</p>
+					<p>
+						報名總人數 <span class="num">1052</span><span class="unit">人</span>
+					</p>
+					<p>
+						報名總人數 <span class="num">41</span><span class="unit">人</span>
+					</p>
+				</div>
+			</div>
+		</section>
+
+    
+	</body>
 </html>
